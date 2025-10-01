@@ -27,11 +27,11 @@ Conceptual pipeline for an analytical database, populated with information about
 
 This document outlines the structure of the stock price data warehouse, which employs a star schema design. The schema consists of one central fact table, FactStockPrice, surrounded by four dimension tables: DimDate, DimCompany, DimExchange, and DimCurrency.
 
-Fact Table:
+### Fact Table
 
 The FactStockPrice table contains the measured daily stock metrics (High, Low, Open, Close, Volume) linked to the relevant dimensions via foreign keys. It is the central table used for analysis and reporting.
 
-Dimension Tables:
+### Dimension Tables
 
 Dimension tables provide the contextual information for analyzing the facts.
 
