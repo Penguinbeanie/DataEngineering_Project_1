@@ -1,7 +1,7 @@
 # DataEngineering_Project_1
 Conceptual pipeline for an analytical database, populated with information about individual stocks and their daily prices.
 
-### Data used for the pipeline:
+## Data Used For The Pipeline
 
 1. Daily stock activity for individual companies, requested throught the AlphaVantage API (DataSet1).
 
@@ -23,7 +23,7 @@ Conceptual pipeline for an analytical database, populated with information about
 
    Source: https://en.wikipedia.org/wiki/List_of_circulating_currencies
 
-### Star Schema Summary
+## Star Schema Summary
 
 This document outlines the structure of the stock price data warehouse, which employs a star schema design. The schema consists of one central fact table, FactStockPrice, surrounded by four dimension tables: DimDate, DimCompany, DimExchange, and DimCurrency.
 
