@@ -11,7 +11,7 @@ Investors – evaluate high-volatility or high-growth companies to inform tradin
 Policymakers – detect early warning signals of financial stress and gather evidence for potential reforms or regulatory adjustments.
 
 ### Key Metrics:
-1. Price Growth (%) = ((Close_end - Close_start) / Close_start)) * 100  
+1. Price Growth (%) = ((Close_end - Close_start) / Close_start) * 100  
 Close_end → Closing price at the end of the period  
 Close_start → Closing price at the start of the period
 
