@@ -28,7 +28,7 @@ Close → Closing price of the day
 1. Which are the top 3 most-traded companies in each sector during Q1 2025?
 2. How has the average price by sectors changed over the past 10 years?
 3. Which 10 companies experienced the highest price growth in Q1 2025 from highest to lowest , and what were their percentage gains? 
-4. Which are the top 5 companies with the highest average relative volatility in Q1 2025?
+4. Which are the top 5 companies with the highest average relative volatility in Q1 2025?  
 5.How has the sector composition of S&P 500 companies changed from 2000 to 2025?
 
 ## Data Used For The Pipeline
