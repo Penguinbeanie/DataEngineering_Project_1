@@ -1,6 +1,36 @@
 # DataEngineering_Project_1
 Conceptual pipeline for an analytical database, populated with information about individual stocks and their daily prices.
 
+## Business Brief
+# Objective: 
+This project analyzes the stock prices of S&P 500 companies from historical data to the present. By monitoring sector composition changes within the S&P 500, we can observe long-term investment trends. Focusing on an individual company’s stock allows us to track its growth or decline over time.
+
+# Stakeholders:
+Finance and Risk managers – Identify stocks that need closer monitoring or rebalancing.
+Investors – evaluate high-volatility or high-growth companies to inform trading and investment strategies.
+Policymakers – detect early warning signals of financial stress and gather evidence for potential reforms or regulatory adjustments.
+
+# Key Metrics:
+1. Price Growth (%) = ((Close_end - Close_start) / Close_start) * 100
+Close_end → Closing price at the end of the period
+Close_start → Closing price at the start of the period
+
+2. Average Daily Return = (Close_today - Close_yesterday) / Close_yesterday
+Close_today → Closing price for the current day
+Close_yesterday → Closing price for the previous day
+
+3. Relative Volatility = (High - Low) / Close
+High → Highest price of the day
+Low → Lowest price of the day
+Close → Closing price of the day
+
+# Business Questions:
+1. Which are the top 3 most-traded companies in each sector during Q1 2025?
+2. How has the average price by sectors changed over the past 10 years?
+3. Which 10 companies experienced the highest price growth in Q1 2025 from highest to lowest , and what were their percentage gains? 
+4. Which are the top 5 companies with the highest average relative volatility in Q1 2025?
+5.How has the sector composition of S&P 500 companies changed from 2000 to 2025?
+
 ## Data Used For The Pipeline
 
 1. Daily stock activity for individual companies, requested throught the AlphaVantage API (DataSet1).
