@@ -1,36 +1,20 @@
 -- 1. Which are the top 3 most-traded companies in each sector during Q1 2025?
 WITH Q1_2025 AS (
-    SELECT 
-        f.CompanyID, 
-        SUM(f.Volume) AS total_volume, 
-        d.Sector
+    SELECT f.CompanyID, SUM(f.Volume) AS total_volume, d.Sector
     FROM FactStockPrice f
-    JOIN DimDate dd 
-        ON f.DateID = dd.DateID
-    JOIN DimCompany d 
-        ON f.CompanyID = d.CompanyID
-    WHERE dd.Year = 2025 
-      AND dd.Quarter = 1
+    JOIN DimDate dd ON f.DateID = dd.DateID
+    JOIN DimCompany d ON f.CompanyID = d.CompanyID
+    WHERE dd.Year = 2025 AND dd.Quarter = 1
     GROUP BY f.CompanyID, d.Sector
 )
-SELECT 
-    Sector, 
-    CompanyID, 
-    total_volume
+SELECT Sector, CompanyID, total_volume
 FROM (
-    SELECT 
-        Sector, 
-        CompanyID, 
-        total_volume,
-        ROW_NUMBER() OVER (
-            PARTITION BY Sector 
-            ORDER BY total_volume DESC
-        ) AS rn
+    SELECT Sector, CompanyID, total_volume,
+           ROW_NUMBER() OVER (PARTITION BY Sector ORDER BY total_volume DESC) AS rn
     FROM Q1_2025
 ) ranked
 WHERE rn <= 3
 ORDER BY Sector, total_volume DESC;
-
 
 -- 2. How has the average price by sectors changed over the past 10 years?
 -- using (Open+Close)/2 as “average price”
