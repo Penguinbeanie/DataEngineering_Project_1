@@ -6,8 +6,8 @@ Conceptual pipeline for an analytical database, populated with information about
 This project analyzes the stock prices of S&P 500 companies from historical data to the present. By monitoring sector composition changes within the S&P 500, we can observe long-term investment trends. Focusing on an individual company’s stock allows us to track its growth or decline over time.
 
 ### Stakeholders:
-Finance and Risk managers – Identify stocks that need closer monitoring or rebalancing.
-Investors – evaluate high-volatility or high-growth companies to inform trading and investment strategies.
+Finance and Risk managers – Identify stocks that need closer monitoring or rebalancing.  
+Investors – evaluate high-volatility or high-growth companies to inform trading and investment strategies.  
 Policymakers – detect early warning signals of financial stress and gather evidence for potential reforms or regulatory adjustments.
 
 ### Key Metrics:
