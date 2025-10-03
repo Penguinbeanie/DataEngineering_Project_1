@@ -11,15 +11,15 @@ Investors – evaluate high-volatility or high-growth companies to inform tradin
 Policymakers – detect early warning signals of financial stress and gather evidence for potential reforms or regulatory adjustments.
 
 ### Key Metrics:
-1. Price Growth (%) = ((Close_end - Close_start) / Close_start) * 100
+1. Price Growth (%) = ((Close_end - Close_start) / Close_start)) * 100  
 Close_end → Closing price at the end of the period
 Close_start → Closing price at the start of the period
 
-2. Average Daily Return = (Close_today - Close_yesterday) / Close_yesterday
+3. Average Daily Return = (Close_today - Close_yesterday) / Close_yesterday  
 Close_today → Closing price for the current day
 Close_yesterday → Closing price for the previous day
 
-3. Relative Volatility = (High - Low) / Close
+4. Relative Volatility = (High - Low) / Close  
 High → Highest price of the day
 Low → Lowest price of the day
 Close → Closing price of the day
